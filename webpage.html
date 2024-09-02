@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1
+        style="
+          text-align: center;
+          background-color: green;
+          color: white;
+          margin: 0;
+          width: 100%;
+          padding: 20px;
+        "
+      >
+        My First Webpage
+      </h1>
+    </div>
+
+    <div style="margin: 20px">
+      <a
+        href="#webpage-contents"
+        style="
+          color: green;
+          text-decoration: none;
+          margin-right: 40px;
+          font-weight: bold;
+        "
+        >Webpage Contents</a
+      >
+      <a
+        href="#information-table"
+        style="
+          color: green;
+          text-decoration: none;
+          margin-right: 40px;
+          font-weight: bold;
+        "
+        >Information Table</a
+      >
+      <a
+        href="#contact-form"
+        style="
+          color: green;
+          text-decoration: none;
+          margin-right: 40px;
+          font-weight: bold;
+        "
+        >Contact Form</a
+      >
+    </div>
+
+    <div>
+      <img
+        style="margin-left: 20px; width: 750px"
+        src="Setting_Sun_from_Saltdean_Beach_-_geograph.org.uk_-_634681.jpg"
+        alt="Sun setting from Beach"
+      />
+      <p
+        style="
+          font-weight: 500;
+          width: 800px;
+          margin: 20px;
+          margin-bottom: 30px;
+        "
+      >
+        This is a sample paragraph describing the content of the webpage. It
+        explains the purpose of the page and <br />
+        <span style="text-align: center"
+          >provides some basic information about what users can expect to
+          find.</span
+        >
+      </p>
+    </div>
+
+    <a
+      href="https://www.techyjaunt.com/"
+      target="_blank"
+      style="margin-bottom: 20px; margin-left: 20px; display: inline-block"
+      >Visit TechJaunt</a
+    >
+
+    <!-- webpage contents section     -->
+    <div style="margin-bottom: 70px; margin-left: 20px">
+      <h2 id="webpage-contents">Webpage Contents</h2>
+      <ul>
+        <li style="margin-bottom: 5px">Introduction</li>
+        <li style="margin-bottom: 5px">Table of Information</li>
+        <li>Contact Form</li>
+      </ul>
+    </div>
+
+    <!-- Information table section -->
+    <div style="margin-bottom: 70px; margin-left: 20px" ;>
+      <h2 id="information-table">Information Table</h2>
+      <table
+        border="1"
+        cellpadding="10"
+        cellspacing="0"
+        style="text-align: center"
+      >
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pens</td>
+            <td>Blue Ink Pens</td>
+            <td>5</td>
+          </tr>
+
+          <tr>
+            <td>Notebooks</td>
+            <td>Spiral-bound Notebooks</td>
+            <td>3</td>
+          </tr>
+
+          <tr>
+            <td>Markers</td>
+            <td>Permanent Markers</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+    </div>
+
+    <!-- contact form section     -->
+    <form style="margin-left: 20px">
+      <h2 id="contact-form">Contact Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="useremail" />
+      <br />
+      <br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <br />
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br />
+      <br />
+
+      <label>Subscribe:</label>
+      <input type="checkbox" id="subscribe" value="subscribe" />
+      <label for="subscribe">Yes, I want to subscribe</label>
+      <br />
+      <br />
+
+      <label for="number">Number of items:</label>
+      <input type="number" id="number" name="number" />
+      <br />
+      <br />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" />
+      <br />
+      <br />
+
+      <label for="message">Message:</label>
+      <br />
+      <textarea name="message" id="message" rows="5" cols="50"></textarea>
+      <br />
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
